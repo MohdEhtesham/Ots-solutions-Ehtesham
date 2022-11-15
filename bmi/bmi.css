@@ -1,0 +1,43 @@
+html {
+    font-family: sans-serif;
+  }
+  
+  body {
+    width: 50%;
+    max-width: 750px;
+    min-width: 480px;
+    margin: 0 auto;
+  }
+  
+ input{
+    margin-left: 250px;
+ }
+  
+ 
+  
+  button {
+    background-color: purple;
+    color: #fff;
+    width: 250px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 30px;
+    border-style: none;
+    margin-left: 220px;
+    ;
+    /* margin-left: 50px; */
+  }
+  
+ 
+  h1 {
+    background-color: #7b3056;
+    color: #fff;
+    text-align: center;
+    width: 750px;
+  }
+  
+  p {
+    font-size: 20px;
+    text-align: center;
+  }
+ 
