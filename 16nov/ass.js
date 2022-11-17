@@ -6,21 +6,21 @@
 
 // setTimeout(function y()  {
 //     console.log("timeout 1!")
-    
+
 // }, 500);
 
 // setTimeout(function x() {
 //     Promise.resolve().then((p1) => console.log("promise 2"))
 //     setTimeout(() => {
 //         Promise.resolve().then((p1) => console.log("promise 3"))
-        
+
 //     },0);
 //     console.log("hello 3");
 
 // Promise.resolve().then((p1) => console.log("promise4"));
 
 // console.log("helllo 4");
-    
+
 // }, 500);
 
 // console.log("bye!")
@@ -29,38 +29,42 @@
 
 
 
-   
 
 
 
-function getcountryData (c){
-    const getcountryData = fetch(`https://restcountries.com/v2/name/${c}`)
-    .then(data=>data.json())
-    .then(result=>console.log(result[0].borders));
-   
- 
+
+// function getcountryData (c){
+//     const getcountryData = fetch(`https://restcountries.com/v2/name/${c}`)
+//     .then(data=>data.json())
+//     .then(result=>console.log(result[0].borders));
+
+
+// }
+// getcountryData("china");
+
+// const fetchedData = (c) =>{
+//     const fetchedData =fetch(`https://restcountries.com/v2/name/${c}`)
+//     .then(data => data.json())
+//     .then(result => console.log(result))
+
+// }
+// fetchedData("america")
+
+// Assingment of the shakshi singh 
+
+const dataofcountry = (c) => {
+    const fetchedData = fetch(`https://restcountries.com/v2/name/${c}`)
+        .then(data => data.json())
+        .then((result) => {
+            if (!result.ok)throw new Error("bhaag jao")
+            
+            else{
+                console.log(result)
+            }
+        }).catch((e) => {
+            console.log(e)
+        })
 }
-getcountryData("china");
 
-const fetchedData = (c) =>{
-    const fetchedData =fetch(`https://restcountries.com/v2/name/${c}`)
-    .then(data => data.json())
-    .then(result => console.log(result))
-    
-}
-fetchedData("america")
-
-
-
-const dataofcountry = (c) =>{
-    const fetchedData =fetch(`https://restcountries.com/v2/name/${c}`)
-    .then(data => data.json())
-    .then((result)=>{
-        if(!result.ok) throw new Error("bhaag")
-    }).catch((e)=>{
-        console.log(e)
-    })
-}
-
-dataofcountry("am")
+dataofcountry("india")
 

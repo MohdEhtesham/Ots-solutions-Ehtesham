@@ -13,6 +13,6 @@ let promise2 = new Promise(function(resolve, reject) {
 let promise3 = new Promise(function(resolve, reject) {
     resolve("I am surely going to get resolved!");
   
-    reject(new Error('Will this be ignored?')); // ignored
-    resolve("Ignored?"); // ignored
+    reject(new Error('Will this be ignored?'));
+    resolve("Ignored?"); 
   });
