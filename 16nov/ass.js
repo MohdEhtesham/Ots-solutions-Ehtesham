@@ -54,17 +54,13 @@
 
 const dataofcountry = (c) => {
     const fetchedData = fetch(`https://restcountries.com/v2/name/${c}`)
-        .then(data => data.json())
-        .then((result) => {
-            if (!result.ok)throw new Error("bhaag jao")
-            
-            else{
-                console.log(result)
-            }
-        }).catch((e) => {
-            console.log(e)
-        })
+   .then(result =>{
+    if(!result.ok){
+        throw new Error('something went wrong');
+    }
+    return result.json();
+   })
+   .then(result =>console.log(result));
 }
 
 dataofcountry("india")
-
