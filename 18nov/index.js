@@ -1,3 +1,6 @@
+
+//call once function
+
 let count =0;
 
 function oncefunction(){
@@ -12,3 +15,6 @@ function oncefunction(){
 oncefunction();
 oncefunction();
 oncefunction();
+
+
+
