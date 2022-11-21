@@ -64,3 +64,4 @@ const dataofcountry = (c) => {
 }
 
 dataofcountry("india")
+
