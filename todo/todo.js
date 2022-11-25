@@ -10,10 +10,10 @@ button.addEventListener('click',()=>{
     listitem.id =val
     listitem.addEventListener('click',()=>{
         if(listitem.style.backgroundColor=='green'){
-            listitem.style.backgroundColor=='white';
+            listitem.style.backgroundColor='white';
         }
         else{
-            listitem.style.backgroundColor=='green'
+            listitem.style.backgroundColor='green'
 
         }
     })
