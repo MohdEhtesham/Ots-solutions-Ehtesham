@@ -8,21 +8,21 @@
     <script src="rgb.js"></script>
     <link rel="stylesheet" href="rgb.css">
 </head>
-<body>
+<body id="block">
     <div class="container">   
         <div class="smallcontainer">   
     <h1>Color Piker by ME</h1>
-  <input  type="range" id="red" name="vol" min="0" max="250" onchange=" "> 
+  <input  type="range" id="red" name="vol" min="0" max="250" onchange="colorpicker()"> 
   <p >red: <span id="Red" ></span></p>
-  <input  type="range" id="green" name="vol" min="0" max="250" onchange=" ">
+  <input  type="range" id="green" name="vol" min="0" max="250" onchange="colorpicker() ">
   <p >Green: <span id="Green" ></span></p>
-  <input  type="range" id="blue" name="vol" min="0" max="250" onchange=" ">
+  <input  type="range" id="blue" name="vol" min="0" max="250" onchange=" colorpicker()">
   <p >Blue: <span id="Blue" ></span></p>
 
-  <input type="button" onclick="colorpicker()" value="Click">
+  <!-- <input type="button" onclick="colorpicker()" value="Click"> -->
    
-  <div id="block">
-    Hello
+  <div >
+   
 </div>
  
 </div>
