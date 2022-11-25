@@ -25,4 +25,8 @@ button.addEventListener('click',()=>{
  
 })
 
+const buttton2 =document.getElementById("reset-button")
 
+buttton2.addEventListener('click',()=>{
+    document.getElementById("todo-list").innerHTML=" "
+})
