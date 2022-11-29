@@ -24,6 +24,7 @@ button.addEventListener('click',()=>{
     })
     var textnode=document.createTextNode(val);
     listitem.appendChild(textnode)
+    listitem.remove()
     listitem.setAttribute("id","contentP"+row);
     document.querySelector('ul').appendChild(listitem);
     var removeTask = document.createElement('input');
@@ -59,33 +60,20 @@ window.onload = function () {
     for( let i=0;i<arr.length;i++){
        let ul = document.querySelector('ul')
        let li = document.createElement('li')
+       let xrm =document.createElement('button')
+       xrm.innerHTML="X"
+
        li.innerText=arr[i]
        ul.appendChild(li)
+       li.appendChild(xrm)
+       xrm.addEventListener('click',()=>{
+        li.remove()
+       })    
        
-       ul.setAttribute("id","contentP"+row);
-    var removeTask = document.createElement('input');
-    removeTask.setAttribute('type', 'button');
-    removeTask.setAttribute("value", "X");
-    removeTask.setAttribute("id", "removeButton");
-    removeTask.setAttribute("onClick", "del("+ row +");");
-
-    ul.appendChild(removeTask);
-        row++;
-
-        
-       
-
-    }
-
-    
-  
-   
+    }  
     
 }
-function del(ID)
-{
-    document.getElementById('contentP'+ID).remove();
-}
+
 
 function deleterow(ID)
 {
