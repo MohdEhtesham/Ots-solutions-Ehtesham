@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<style>
+
+.cloud{
+  animation: movecloud 8s infinite;
+}
+@keyframes movecloud {
+  0%{
+   transform: translate(20px);
+  }
+  100%{
+   transform: translate(1000px);
+  }
+  
+}
+.mario{
+  animation: movedrive 4s infinite;
+}
+
+@keyframes movedrive {
+  0%{
+   transform: translate(0px);
+  }
+  /* 50%{
+    transform: translate(200px,-400px);
+  } */
+  100%{
+    transform: translate(1000px)
+  }
+  
+  
+}
+.lines{
+  animation: moveline 1s infinite;
+}
+
+@keyframes moveline {
+  0%{
+   transform: translate(100px);
+  }
+  
+  100%{
+    transform: translate(-1000px)
+  }
+  
+  
+}
+
+</style>
+<head>
+  <title>Mario Kart Animations</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <div class="sky">
+    <img src="./img/cloud.png" class='cloud'alt="">
+  </div>
+  <div class="grass"></div>
+  <div class="road">
+    <div class="lines"></div>
+    <img src="./img/mario.png" alt="" class="mario">
+  </div>
+</body>
