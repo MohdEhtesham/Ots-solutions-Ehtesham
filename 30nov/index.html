@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            display: flex;
+            /* justify-content: center;
+            align-items: center; */
+            flex-direction: column;
+        }
+
+        .sty {
+            height: 30px;
+            width: 40px;
+            border: 2px solid red;
+
+        }
+
+        #item1,
+        #item3 {
+            height: 10vh;
+            width: 100%;
+        }
+
+        #item2 {
+            display: flex;
+            height: 80vh;
+            width: 100%;
+            border: 2px solid;
+        }
+        div{
+            border: 2px solid green;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="item1" class="sty">hello</div>
+        <div id="item2" class="sty">
+            <div style="width:30vw;">
+               
+            </div>
+            <div style="width: 70vw;display: flex; flex-direction: column;">
+                <div style="height:20px;width: 100%;"></div>
+                <div style="height:40px;width: 100%; flex: 1;"></div>
+                <div style="height:60px;width: 100%;"></div>
+
+            </div>
+        </div>
+        <div id="item3" class="sty"> hello </div>
+
+
+    </div>
+</body>
+
+</html>
