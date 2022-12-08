@@ -9,7 +9,7 @@ function Goodi(props){
         return(
         <Grid.Column>
           <Image src='/images/wireframe/media-paragraph.png' />
-          <Icon onClick={onPressHeart} name={isUserLike ? "heart" : "heart outline"} color="#900"/>
+          <Icon onClick={onPressHeart} name={isUserLike ? "heart" : "heart outline"} color="#900 "/>
         </Grid.Column>
         )}
         export default Goodi
