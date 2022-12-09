@@ -1,13 +1,14 @@
 import React from 'react'
 
-export default function List(props) {
+export default function List(receipes) {
+  
   
 
   return (
     <div>
       <ul>
         {
-          <li>{props.name}</li>
+         receipes.map((i) => <li key={i}>{i}</li>)
         }
       </ul>
     </div>

@@ -1,23 +1,19 @@
 import "./App.css";
 import React, { useState } from "react";
-import Form from "./Form";
-import List from "./List";
+import FormComponent from "./component/FormComponent/FormComponent";
+import List from "./component/UlComponent";
 
 function App() {
   const [receipes, setReceipes] = useState([]);
-  
 
   const addReceipe = (receipe) => {
     setReceipes([...receipes, receipe]);
   };
- 
- 
-
+  console.log(receipes);
   return (
     <div className="App">
-      <Form addReceipe={addReceipe} />
-      {/* <List receipes={receipes} /> */}
-
+      <FormComponent addReceipe={addReceipe} />
+      <List receipes={receipes} />
     </div>
   );
 }
