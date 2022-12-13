@@ -119,7 +119,7 @@ const Form = ({ addReceipe }) => {
     const { recipe, chef } = details;
     if (recipe && chef && instruction) {
       addReceipe({ recipe, chef, instruction });
-      setDetails({});
+      // setDetails({});
     }
   };
   
