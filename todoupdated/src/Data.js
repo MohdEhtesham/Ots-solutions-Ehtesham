@@ -2,10 +2,11 @@ import React from 'react'
 
 export default function Data({ data }) {
 
-
+console.log(data)
     return (
-        <div>{console.log('====>', data)}
-          { data ? <div>
+        <div>
+            {/* {console.log('====>', data)} */}
+          { data? <div>
                 <div >
                     <span >
                         Recipe Name:
@@ -31,6 +32,13 @@ export default function Data({ data }) {
 
                     }
                 </div>
+                {/* <div>
+                    Instruction :
+                    {
+                        data.id
+
+                    }
+                </div> */}
 
 
 

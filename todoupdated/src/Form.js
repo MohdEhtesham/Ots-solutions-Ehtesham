@@ -96,12 +96,15 @@
 
 
 import React, { useRef, useState } from "react";
+import { v4 as uuid } from 'uuid';
 
 const Form = ({ addReceipe }) => {
   const [details, setDetails] = useState({
     recipe: "",
     chef: "",
+   
   });
+  
 
   const inputRef = useRef();
 
@@ -114,11 +117,11 @@ const Form = ({ addReceipe }) => {
   };
 
   const handleSubmit = () => {
-    console.log(details);
+    // console.log(details);
     const instruction = inputRef.current.value;
     const { recipe, chef } = details;
     if (recipe && chef && instruction) {
-      addReceipe({ recipe, chef, instruction });
+      addReceipe({ recipe, chef, instruction , id : uuid()});
       // setDetails({});
     }
   };
